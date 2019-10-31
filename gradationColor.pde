@@ -18,7 +18,7 @@ void setup() {
 
 void draw() {
   background(0);
-  
+
   //draw gradation
   color col1 = color(colors[0], colors[1], colors[2]); //start => (255,0,0), (0,255,0)
   color col2 = color(colors[3], colors[4], colors[5]);
@@ -28,7 +28,7 @@ void draw() {
     fill(col);
     rect(w, 0, colorFrequency, SCREEN_HEIGHT);
   }
-  
+
   //update color
   for(int i=0; i<colors.length; i++) {
     switch(colorMode[i]){
